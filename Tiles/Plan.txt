@@ -1,0 +1,47 @@
+Plan Outline for this Project
+
+1. Get the World System Figured out 
+2. Get Animations Figured Out
+
+
+
+Planned Features:
+-Procederal World Generation (with seed)
+-Biome generation based on Voroni noise
+-Day/Night Cycle
+-Night circular light with everything else black
+-Morning circular mist with gradient transparency
+-Export/import game saves
+-NPC's
+-Player walks slower on grass/gravel/etc than paths and roads
+-Cities and towns at random points (with seed)
+-Entity sprite animation
+-More enemies at night
+-HUD with an inventory and items
+-Map item to display land (clouded edges)
+-Paths and Cobblestone roads to connect cities and towns (TODO Figure out algorithm to do this)
+-Names for World/cities and Towns/Entites from list of names
+-Ruins (structure) throughout world (with seed)
+
+
+
+Ideas for world save format:
+struct World {
+int worldSizeX;
+int worldSizeY;
+int chunkSizeX;
+int chunkSizeY;
+
+Chunk[] chunks;
+}
+
+struct Chunk{
+int[] tiles; // int is tile type id
+Structure[] structures;
+}
+
+struct Structure{
+int type;
+int posX;
+int posY;
+}
