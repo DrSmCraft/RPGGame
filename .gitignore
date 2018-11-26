@@ -2,4 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Tiles/Source/Util/Logger.cs
+/Tiles/obj
+/.vs

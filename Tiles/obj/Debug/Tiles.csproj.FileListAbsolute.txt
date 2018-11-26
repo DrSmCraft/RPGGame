@@ -88,4 +88,6 @@ C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Co
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\DefaultFont_0.xnb
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\DefaultFont0.xnb
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Content\Fonts\Font_0.xnb
-C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csprojResolveAssemblyReference.cache
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csprojAssemblyReference.cache
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csproj.CoreCompileInputs.cache
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csproj.CopyComplete

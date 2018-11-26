@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 
@@ -6,12 +7,12 @@ namespace RPGGame.Source.Util
 {
     internal class RateCounter
     {
-        public const int Max_Frames = 100;
-        public float AvgFrames;
+        private const int Max_Frames = 100;
+        public  float AvgFrames;
         private readonly Queue<float> Buffer;
-        public float CurrentFrames;
-        public int TotalFrames;
-        public float TotalSeconds;
+        public  float CurrentFrames;
+        public  int TotalFrames;
+        public  float TotalSeconds;
 
         public RateCounter()
         {
@@ -24,7 +25,7 @@ namespace RPGGame.Source.Util
 
         public void Update(GameTime gameTime)
         {
-            CurrentFrames = 1.0f / gameTime.ElapsedGameTime.Seconds;
+            CurrentFrames = 1.0f / (gameTime.ElapsedGameTime.Milliseconds / 1000.0f);
             Buffer.Enqueue(CurrentFrames);
             if (Buffer.Count > Max_Frames)
             {
@@ -44,5 +45,15 @@ namespace RPGGame.Source.Util
         {
             return AvgFrames;
         }
-    }
+
+		public float GetTotalFrames()
+		{
+			return TotalFrames;
+		}
+
+		public float GetTotalSeconds()
+		{
+			return TotalSeconds;
+		}
+	}
 }

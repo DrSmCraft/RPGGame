@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdd85682-28ed-4e94-8de9-091deddd9451" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Fonts/DefaultFont.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Fonts/DefaultFont0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Fonts/DefaultFont_0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Fonts/Font_0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Textures/Tiles/Grass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Textures/Tiles/Gravel.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Textures/Tiles/Sand.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Textures/Tiles/TallGrass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Content/Textures/Tiles/Water.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Fonts/DefaultFont.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Fonts/Font_0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Textures/Tiles/Grass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Textures/Tiles/Gravel.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Textures/Tiles/Sand.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Textures/Tiles/TallGrass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/bin/DesktopGL/Textures/Tiles/Water.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Fonts/DefaultFont.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Fonts/DefaultFont0.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Fonts/DefaultFont_0.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Fonts/Font_0.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Textures/Tiles/Grass.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Textures/Tiles/Gravel.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Textures/Tiles/Sand.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Textures/Tiles/TallGrass.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Content/Textures/Tiles/Water.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Fonts/DefaultFont.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Fonts/Font_0.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Textures/Tiles/Grass.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Textures/Tiles/Gravel.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Textures/Tiles/Sand.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Textures/Tiles/TallGrass.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Content/obj/DesktopGL/Textures/Tiles/Water.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/DefaultFont.fnt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/DefaultFont_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/Tile Textures.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/deftone stylus.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/deftone-stylus.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/grass-3189393_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/leaf-1657149_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/pebble-2692972_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/RawContent/sand-1053242_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/Tiles.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Fonts/DefaultFont.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Fonts/DefaultFont0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Fonts/DefaultFont_0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Fonts/Font_0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Textures/Tiles/Grass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Textures/Tiles/Gravel.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Textures/Tiles/Sand.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Textures/Tiles/TallGrass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Content/Textures/Tiles/Water.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Animations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Animations.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Animations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Entities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Entities.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Entities.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Graphics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Graphics.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Graphics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Gui.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Gui.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Gui.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Input.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Input.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Particles.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Particles.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.Particles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Extended.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/MonoGame.Framework.dll.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/Newtonsoft.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/RPGGame.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/RPGGame.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/libSDL2-2.0.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/libopenal.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x64/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x64/libSDL2-2.0.so.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x64/libopenal.so.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x64/soft_oal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x86/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x86/libSDL2-2.0.so.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x86/libopenal.so.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/x86/soft_oal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Fonts/DefaultFont.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Fonts/DefaultFont_0.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Textures/Tiles/Grass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Textures/Tiles/Gravel.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Textures/Tiles/Sand.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Textures/Tiles/TallGrass.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Content/Textures/Tiles/Water.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Animations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Animations.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Animations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Entities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Entities.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Entities.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Graphics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Graphics.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Graphics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Gui.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Gui.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Gui.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Input.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Input.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Particles.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Particles.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.Particles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Extended.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/MonoGame.Framework.dll.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/Newtonsoft.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/RPGGame.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/RPGGame.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/libSDL2-2.0.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/libopenal.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x64/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x64/libSDL2-2.0.so.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x64/libopenal.so.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x64/soft_oal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x86/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x86/libSDL2-2.0.so.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x86/libopenal.so.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Release/x86/soft_oal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/RPGGame.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/RPGGame.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/RPGGame.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/RPGGame.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/Tiles.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Debug/Tiles.csprojResolveAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Release/RPGGame.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Release/RPGGame.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/obj/Release/Tiles.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/GameMain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/GameMain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Plan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/GameContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/GameContent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileGrass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileGrass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileGravel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileGravel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileSand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileSand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileTallGrass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileTallGrass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Tiles/TileWater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Tiles/TileWater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/Util/RateCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/Util/RateCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/World/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/World/Chunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Source/World/WorldSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Source/World/WorldSystem.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../RPGGame\exportToHTML" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1108617426">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="9" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="9" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="83" />
+          <entry key="txt" value="97" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="83" />
+          <entry key="PLAIN_TEXT" value="97" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RPGGame" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tiles/Source/Util/RateCounter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <folding>
+                <marker date="1543114312015" expanded="false" signature="6:83" ph="..." />
+                <marker date="1543114312015" expanded="true" signature="147:1188" ph="{...}" />
+                <marker date="1543114312015" expanded="true" signature="407:585" ph="{...}" />
+                <marker date="1543114312015" expanded="true" signature="632:1093" ph="{...}" />
+                <marker date="1543114312015" expanded="true" signature="797:905" ph="{...}" />
+                <marker date="1543114312015" expanded="true" signature="922:993" ph="{...}" />
+                <marker date="1543114312015" expanded="true" signature="1132:1182" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tiles/GameMain.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="76" column="18" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="18" />
+              <folding>
+                <marker date="1543115526730" expanded="false" signature="6:313" ph="..." />
+                <marker date="1543115526730" expanded="true" signature="332:3337" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="367:3335" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="643:956" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="1002:1509" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="1556:1793" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="1852:2044" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="2101:2742" ph="{...}" />
+                <marker date="1543115526730" expanded="true" signature="2781:3329" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tiles/Source/Constants.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1543114311995" expanded="true" signature="78:498" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tiles/Source/GameContent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+              <folding>
+                <marker date="1543114312036" expanded="false" signature="6:115" ph="..." />
+                <marker date="1543114312036" expanded="true" signature="165:882" ph="{...}" />
+                <marker date="1543114312036" expanded="true" signature="388:876" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Consol</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1B350014-0E1C-4909-BB86-4BC920F14B3B/35/24524969/GameTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DCD3081E-90B1-401D-81D2-487643CC52B2/1f/3e803966/BoxingViewportAdapter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tiles/GameMain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tiles/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tiles/Source/GameContent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tiles/Source/Constants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tiles/Source/Util/RateCounter.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DCD3081E-90B1-401D-81D2-487643CC52B2/1f/3e803966/BoxingViewportAdapter.cs" />
+        <option value="$PROJECT_DIR$/Tiles/Source/GameContent.cs" />
+        <option value="$PROJECT_DIR$/Tiles/Plan.txt" />
+        <option value="$PROJECT_DIR$/Tiles/Test.txt" />
+        <option value="$PROJECT_DIR$/Tiles/GameMain.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="870" />
+    <option name="y" value="625" />
+    <option name="width" value="1600" />
+    <option name="height" value="710" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="RPGGame" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="RPGGame" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Tiles" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="RPGGame" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Tiles" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Content" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="RPGGame" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Tiles" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="x86" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionAnalysis.ShowFrameworks" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.23410696" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug/RPGGame.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tiles/bin/DesktopGL/AnyCPU/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Tiles/Tiles.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdd85682-28ed-4e94-8de9-091deddd9451" name="Default Changelist" comment="" />
+      <created>1543040197971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543040197971</updated>
+      <workItem from="1543040201296" duration="29000" />
+      <workItem from="1543043374203" duration="181000" />
+      <workItem from="1543108981490" duration="3590000" />
+      <workItem from="1543123090450" duration="405000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Text Commit">
+      <created>1543113327734</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543113327735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4205000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60481584" visible="true" weight="0.25973153" />
+      <window_info id="Structure" order="1" sideWeight="0.3937677" side_tool="true" weight="0.25637585" />
+      <window_info id="Favorites" order="2" sideWeight="0.39518413" side_tool="true" weight="0.25637585" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3286119" />
+      <window_info anchor="bottom" id="NuGet" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50402683" side_tool="true" weight="0.26203966" />
+      <window_info anchor="bottom" id="Build" order="13" sideWeight="0.4966443" weight="0.3286119" />
+      <window_info anchor="bottom" x="23" y="296" width="1490" height="232" id="Run" order="14" sideWeight="0.49597314" weight="0.26203966" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60548526" visible="true" weight="0.25637585" />
+      <window_info id="Structure" order="1" sideWeight="0.39451477" side_tool="true" visible="true" weight="0.25637585" />
+      <window_info id="Favorites" order="2" sideWeight="0.39408866" side_tool="true" weight="0.25637585" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50402683" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.4966443" weight="0.3286119" />
+      <window_info anchor="bottom" x="23" y="296" width="1490" height="232" id="Run" order="15" sideWeight="0.49433428" weight="0.26203966" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="C:/Program Files (x86)/MonoGame/v3.0/Assemblies/DesktopGL/MonoGame.Framework.dll.config" />
+    </ignored-roots>
+    <MESSAGE value="Initial Text Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Text Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DCD3081E-90B1-401D-81D2-487643CC52B2/1f/3e803966/BoxingViewportAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/Program.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1B350014-0E1C-4909-BB86-4BC920F14B3B/35/24524969/GameTime.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/Plan.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/Test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/Source/Util/RateCounter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <marker date="1543114312015" expanded="false" signature="6:83" ph="..." />
+            <marker date="1543114312015" expanded="true" signature="147:1188" ph="{...}" />
+            <marker date="1543114312015" expanded="true" signature="407:585" ph="{...}" />
+            <marker date="1543114312015" expanded="true" signature="632:1093" ph="{...}" />
+            <marker date="1543114312015" expanded="true" signature="797:905" ph="{...}" />
+            <marker date="1543114312015" expanded="true" signature="922:993" ph="{...}" />
+            <marker date="1543114312015" expanded="true" signature="1132:1182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/Source/Constants.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1543114311995" expanded="true" signature="78:498" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/Source/GameContent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <marker date="1543114312036" expanded="false" signature="6:115" ph="..." />
+            <marker date="1543114312036" expanded="true" signature="165:882" ph="{...}" />
+            <marker date="1543114312036" expanded="true" signature="388:876" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tiles/GameMain.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="18" />
+          <folding>
+            <marker date="1543115526730" expanded="false" signature="6:313" ph="..." />
+            <marker date="1543115526730" expanded="true" signature="332:3337" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="367:3335" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="643:956" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="1002:1509" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="1556:1793" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="1852:2044" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="2101:2742" ph="{...}" />
+            <marker date="1543115526730" expanded="true" signature="2781:3329" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

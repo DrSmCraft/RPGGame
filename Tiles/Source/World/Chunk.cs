@@ -2,6 +2,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
+using RPGGame.Source.Util;
 using RPGGame.Tiles;
 
 namespace RPGGame.World
@@ -32,26 +33,26 @@ namespace RPGGame.World
         {
             if (pos.X < 0)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where x < 0\nDefaulting to 0.");
+                Logger.Log(LogType.WARNING, "Trying to access tile in chunk where x < 0\nDefaulting to 0.");
                 return GetTileId(new Vector2(0, pos.Y));
             }
 
             if (pos.X > Constants.ChunkDim.X)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where x < " + Constants.ChunkDim.X +
+				Logger.Log(LogType.WARNING, "Trying to access tile in chunk where x < " + Constants.ChunkDim.X +
                                       "\nDefaulting to " + Constants.ChunkDim.X + ".");
                 return GetTileId(new Vector2(Constants.ChunkDim.X, pos.Y));
             }
 
             if (pos.Y < 0)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where y < 0\nDefaulting to 0.");
+				Logger.Log(LogType.WARNING, "Trying to access tile in chunk where y < 0\nDefaulting to 0.");
                 return GetTileId(new Vector2(pos.X, 0));
             }
 
             if (pos.Y > Constants.ChunkDim.Y)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where y < " + Constants.ChunkDim.Y +
+				Logger.Log(LogType.WARNING, "Trying to access tile in chunk where y < " + Constants.ChunkDim.Y +
                                       "\nDefaulting to " + Constants.ChunkDim.Y + ".");
                 return GetTileId(new Vector2(pos.X, Constants.ChunkDim.Y));
             }
@@ -74,5 +75,10 @@ namespace RPGGame.World
                 TileMap.TileDict[Tiles[y, x]].Draw(gameTime, position * Constants.TileDim, camera);
             }
         }
-    }
+
+		public override string ToString()
+		{
+			return "{Chunk at " + Position + " }";
+		}
+	}
 }

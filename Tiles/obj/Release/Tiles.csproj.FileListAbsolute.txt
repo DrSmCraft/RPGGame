@@ -42,8 +42,8 @@ C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Release\
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Release\MonoGame.Extended.Particles.pdb
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Release\MonoGame.Extended.Particles.xml
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Release\Newtonsoft.Json.xml
-C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Release\Tiles.csprojAssemblyReference.cache
-C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Release\Tiles.csproj.CoreCompileInputs.cache
-C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Release\Tiles.csproj.CopyComplete
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Release\RPGGame.exe
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Release\RPGGame.pdb
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Release\Content\Fonts\DefaultFont0.xnb
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Release\Content\Fonts\Font_0.xnb
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Release\Tiles.csprojResolveAssemblyReference.cache

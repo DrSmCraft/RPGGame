@@ -54,6 +54,9 @@
     <Compile Include="Source\Tiles\TileSand.cs" />
     <Compile Include="Source\Tiles\TileTallGrass.cs" />
     <Compile Include="Source\Tiles\TileWater.cs" />
+    <Compile Include="Source\Util\DebugScreen.cs" />
+    <Compile Include="Source\Util\GameMath.cs" />
+    <Compile Include="Source\Util\Logger.cs" />
     <Compile Include="Source\Util\RateCounter.cs" />
     <Compile Include="Source\World\Chunk.cs" />
     <Compile Include="Source\World\WorldSystem.cs" />

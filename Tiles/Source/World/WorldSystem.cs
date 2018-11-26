@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using MonoGame.Extended.Entities;
+using RPGGame.Source.Util;
 
 namespace RPGGame.World
 {
@@ -32,33 +33,68 @@ namespace RPGGame.World
         {
             if (pos.X < 0)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in world where x < 0\nDefaulting to 0.");
+				Logger.Log(LogType.WARNING, "Trying to access tile in world where x < 0\nDefaulting to 0.");
                 return GetTileId(new Vector2(0, pos.Y));
             }
 
-            if (pos.X > Constants.WorldDim.X)
+            if (pos.X > Constants.WorldDim.X * Constants.ChunkDim.X)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in world where x < " + Constants.WorldDim.X +
-                                      "\nDefaulting to " + Constants.WorldDim.X + ".");
+				Logger.Log(LogType.WARNING, "Trying to access tile in world where x < " + Constants.WorldDim.X * Constants.ChunkDim.X +
+                                      "\nDefaulting to " + Constants.WorldDim.X * Constants.ChunkDim.X + ".");
                 return GetTileId(new Vector2(Constants.WorldDim.X, pos.Y));
             }
 
             if (pos.Y < 0)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in world where y < 0\nDefaulting to 0.");
+				Logger.Log(LogType.WARNING, "Trying to access tile in world where y < 0\nDefaulting to 0.");
                 return GetTileId(new Vector2(pos.X, 0));
             }
 
-            if (pos.Y > Constants.WorldDim.Y)
+            if (pos.Y > Constants.WorldDim.Y * Constants.ChunkDim.Y)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in world where y < " + Constants.WorldDim.Y +
-                                      "\nDefaulting to " + Constants.WorldDim.Y + ".");
+                Logger.Log(LogType.WARNING, "Trying to access tile in world where y < " + Constants.WorldDim.Y * Constants.ChunkDim.Y +
+                                      "\nDefaulting to " + Constants.WorldDim.Y * Constants.ChunkDim.Y + ".");
                 return GetTileId(new Vector2(pos.X, Constants.WorldDim.Y));
             }
 
-            return Chunks[(int) (pos.Y % Constants.WorldDim.Y), (int) (pos.X % Constants.WorldDim.X)]
+			return GetChunk(new Vector2(pos.Y % Constants.WorldDim.Y, pos.X % Constants.WorldDim.X))
                 .GetTileId((int) (pos.X % Constants.ChunkDim.X), (int) (pos.Y % Constants.ChunkDim.Y));
         }
+
+		public Chunk GetChunk(Vector2 pos)
+		{
+			if (pos.X < 0)
+			{
+				Logger.Log(LogType.WARNING, "Trying to access chunk in world where x < 0\nDefaulting to 0.");
+				return GetChunk(new Vector2(0, pos.Y));
+			}
+
+			if (pos.X >= Constants.WorldDim.X)
+			{
+				Logger.Log(LogType.WARNING, "Trying to access chunk in world where x < " + Constants.WorldDim.X +
+									  "\nDefaulting to " + Constants.WorldDim.X + ".");
+				return GetChunk(new Vector2(Constants.WorldDim.X- 1, pos.Y));
+			}
+
+			if (pos.Y < 0)
+			{
+				Logger.Log(LogType.WARNING, "Trying to access chunk in world where y < 0\nDefaulting to 0.");
+				return GetChunk(new Vector2(pos.X, 0));
+			}
+
+			if (pos.Y >= Constants.WorldDim.Y)
+			{
+				Logger.Log(LogType.WARNING, "Trying to access chunk in world where y < " + Constants.WorldDim.Y +
+									  "\nDefaulting to " + Constants.WorldDim.Y + ".");
+				return GetChunk(new Vector2(pos.X, Constants.WorldDim.Y - 1));
+			}
+			return Chunks[(int) pos.Y, (int) pos.X];
+		}
+
+		public Chunk GetChunk(int posX, int posY)
+		{
+			return GetChunk(new Vector2(posX, posY));
+		}
 
         public void Draw(GameTime gameTime, Camera2D camera)
         {
@@ -66,5 +102,7 @@ namespace RPGGame.World
             for (var x = 0; x < Constants.WorldDim.X; x++)
                 Chunks[y, x].Draw(gameTime, camera);
         }
-    }
+
+		
+	}
 }
