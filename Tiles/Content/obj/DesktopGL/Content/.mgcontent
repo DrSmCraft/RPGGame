@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Fonts/DefaultFont.fnt</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Fonts/DefaultFont_0.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Grass.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Gravel.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Sand.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/TallGrass.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Water.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File>Fonts/Font_0.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

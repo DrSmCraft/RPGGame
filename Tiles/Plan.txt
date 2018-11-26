@@ -8,6 +8,7 @@ Plan Outline for this Project
 Planned Features:
 -Procederal World Generation (with seed)
 -Biome generation based on Voroni noise
+-Rivers generation (using low octave perlin/simplex noise)
 -Day/Night Cycle
 -Night circular light with everything else black
 -Morning circular mist with gradient transparency

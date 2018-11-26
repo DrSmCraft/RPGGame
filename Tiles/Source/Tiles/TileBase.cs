@@ -6,19 +6,19 @@ namespace RPGGame.Tiles
 {
     public abstract class TileBase
     {
-        public Texture2D Texture;
         public readonly int Id;
         private readonly float Scale;
         public SpriteBatch SpriteBatch;
+        public Texture2D Texture;
 
         public TileBase(SpriteBatch spriteBatch, int id, Texture2D texture, float scale = 1.0f)
         {
-            this.SpriteBatch = spriteBatch;
-            this.Id = id;
-            this.Texture = texture;
-            this.Scale = scale;
+            SpriteBatch = spriteBatch;
+            Id = id;
+            Texture = texture;
+            Scale = scale;
         }
-        
+
 
         public virtual void Draw(GameTime gameTime, Vector2 position, Camera2D camera)
         {
@@ -47,7 +47,5 @@ namespace RPGGame.Tiles
         {
             Draw(gameTime, Vector2.Zero);
         }
-
-        
     }
 }

@@ -4,9 +4,9 @@ namespace RPGGame.Tiles
 {
     public class TileGravel : TileBase
     {
-        public TileGravel(SpriteBatch spriteBatch) : base(spriteBatch, TileMap.TileNames["Gravel"], GameContent.gravelTexture, scale: Constants.TileDim / 32f) // 32f because texture is 32 pixels
+        public TileGravel(SpriteBatch spriteBatch) : base(spriteBatch, TileMap.TileNames["Gravel"],
+            GameContent.gravelTexture, Constants.TileDim / 32f) // 32f because texture is 32 pixels
         {
-            
         }
     }
 }

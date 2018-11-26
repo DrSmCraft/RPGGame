@@ -8,9 +8,9 @@ namespace RPGGame.World
 {
     public class Chunk
     {
-        public SpriteBatch SpriteBatch;
         public Vector2 Position;
-        private int[,] Tiles;
+        public SpriteBatch SpriteBatch;
+        private readonly int[,] Tiles;
 
         public Chunk(SpriteBatch spriteBatch, Vector2 position)
         {
@@ -22,14 +22,10 @@ namespace RPGGame.World
 
         public void GenerateTiles()
         {
-            Random random = new Random();
-            for (int y = 0; y < Constants.ChunkDim.Y; y++)
-            {
-                for (int x = 0; x < Constants.ChunkDim.X; x++)
-                {
-                    Tiles[y, x] = random.Next(0, 4);
-                }
-            }
+            var random = new Random();
+            for (var y = 0; y < Constants.ChunkDim.Y; y++)
+            for (var x = 0; x < Constants.ChunkDim.X; x++)
+                Tiles[y, x] = random.Next(0, 4);
         }
 
         public int GetTileId(Vector2 pos) // get tile at pos
@@ -42,10 +38,11 @@ namespace RPGGame.World
 
             if (pos.X > Constants.ChunkDim.X)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where x < " + Constants.ChunkDim.X + "\nDefaulting to " + Constants.ChunkDim.X + ".");
+                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where x < " + Constants.ChunkDim.X +
+                                      "\nDefaulting to " + Constants.ChunkDim.X + ".");
                 return GetTileId(new Vector2(Constants.ChunkDim.X, pos.Y));
             }
-            
+
             if (pos.Y < 0)
             {
                 Console.Out.WriteLine("WARNING: Trying to access tile in chunk where y < 0\nDefaulting to 0.");
@@ -54,7 +51,8 @@ namespace RPGGame.World
 
             if (pos.Y > Constants.ChunkDim.Y)
             {
-                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where y < " + Constants.ChunkDim.Y + "\nDefaulting to " + Constants.ChunkDim.Y + ".");
+                Console.Out.WriteLine("WARNING: Trying to access tile in chunk where y < " + Constants.ChunkDim.Y +
+                                      "\nDefaulting to " + Constants.ChunkDim.Y + ".");
                 return GetTileId(new Vector2(pos.X, Constants.ChunkDim.Y));
             }
 
@@ -68,13 +66,12 @@ namespace RPGGame.World
 
         public void Draw(GameTime gameTime, Camera2D camera)
         {
-            for (int y = 0; y < Constants.ChunkDim.Y; y++)
+            for (var y = 0; y < Constants.ChunkDim.Y; y++)
+            for (var x = 0; x < Constants.ChunkDim.X; x++)
             {
-                for (int x = 0; x < Constants.ChunkDim.X; x++)
-                {
-                    Vector2 position = new Vector2(Position.X * Constants.ChunkDim.X + x, Position.Y * Constants.ChunkDim.Y + y);
-                    TileMap.TileDict[Tiles[y, x]].Draw(gameTime, position * Constants.TileDim, camera);
-                }
+                var position = new Vector2(Position.X * Constants.ChunkDim.X + x,
+                    Position.Y * Constants.ChunkDim.Y + y);
+                TileMap.TileDict[Tiles[y, x]].Draw(gameTime, position * Constants.TileDim, camera);
             }
         }
     }
