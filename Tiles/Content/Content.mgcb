@@ -15,6 +15,24 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Effects/LightEffect.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:Effects/LightEffect.fx
+
+#begin Effects/Textures/LightMask.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Effects/Textures/LightMask.png
+
 #begin Fonts/DefaultFont.fnt
 /importer:
 /processor:
@@ -30,7 +48,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Fonts/DefaultFont_0.png;Fonts/Font_0.png
+/build:Fonts/DefaultFont_0.png
 
 #begin Textures/Tiles/Grass.png
 /importer:TextureImporter

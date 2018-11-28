@@ -4,6 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Effects/LightEffect.fx</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Effects/Textures/LightMask.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Fonts/DefaultFont.fnt</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Fonts/DefaultFont_0.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Grass.png</File>
@@ -14,7 +16,9 @@
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
-    <File>Fonts/Font_0.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

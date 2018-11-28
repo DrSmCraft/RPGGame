@@ -91,3 +91,5 @@ C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Co
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csprojAssemblyReference.cache
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csproj.CoreCompileInputs.cache
 C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\obj\Debug\Tiles.csproj.CopyComplete
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Content\Effects\Textures\LightMask.xnb
+C:\Users\Notebook\Documents\Projects\RPGGame\Tiles\bin\DesktopGL\AnyCPU\Debug\Content\Effects\LightEffect.xnb

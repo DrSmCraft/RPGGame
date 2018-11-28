@@ -23,6 +23,7 @@ Planned Features:
 -Paths and Cobblestone roads to connect cities and towns (TODO Figure out algorithm to do this)
 -Names for World/cities and Towns/Entites from list of names
 -Ruins (structure) throughout world (with seed)
+-Cloud/Fog overlay at edges of world
 
 
 

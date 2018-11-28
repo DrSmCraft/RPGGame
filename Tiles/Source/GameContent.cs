@@ -6,19 +6,26 @@ namespace RPGGame
 {
     public class GameContent
     {
-        public static Texture2D grassTexture, gravelTexture, sandTexture, waterTexture, tallGrassTexture;
-        public static BitmapFont defaultFont;
+        public static Texture2D GrassTexture, GravelTexture, SandTexture, WaterTexture, TallGrassTexture;
+        public static BitmapFont DefaultFont;
+
+		public static Effect LightMask;
+		public static Texture2D LightMaskTexture;
 
 
         public static void LoadContent(ContentManager manager)
         {
-            grassTexture = manager.Load<Texture2D>(@"Textures/Tiles/Grass");
-            gravelTexture = manager.Load<Texture2D>(@"Textures/Tiles/Gravel");
-            sandTexture = manager.Load<Texture2D>(@"Textures/Tiles/Sand");
-            waterTexture = manager.Load<Texture2D>(@"Textures/Tiles/Water");
-            tallGrassTexture = manager.Load<Texture2D>(@"Textures/Tiles/TallGrass");
+            GrassTexture = manager.Load<Texture2D>(@"Textures/Tiles/Grass");
+            GravelTexture = manager.Load<Texture2D>(@"Textures/Tiles/Gravel");
+            SandTexture = manager.Load<Texture2D>(@"Textures/Tiles/Sand");
+            WaterTexture = manager.Load<Texture2D>(@"Textures/Tiles/Water");
+            TallGrassTexture = manager.Load<Texture2D>(@"Textures/Tiles/TallGrass");
 
-            defaultFont = manager.Load<BitmapFont>(@"Fonts/DefaultFont");
-        }
+            DefaultFont = manager.Load<BitmapFont>(@"Fonts/DefaultFont");
+
+			LightMask = manager.Load<Effect>(@"Effects/LightEffect");
+			LightMaskTexture = manager.Load<Texture2D>(@"Effects/Textures/LightMask");
+
+		}
     }
 }

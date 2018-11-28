@@ -56,8 +56,13 @@
     <Compile Include="Source\Tiles\TileWater.cs" />
     <Compile Include="Source\Util\DebugScreen.cs" />
     <Compile Include="Source\Util\GameMath.cs" />
+    <Compile Include="Source\Util\GameObject.cs" />
+    <Compile Include="Source\Util\Lighting.cs" />
     <Compile Include="Source\Util\Logger.cs" />
+    <Compile Include="Source\Util\LogManager.cs" />
+    <Compile Include="Source\Util\Miscellaneous.cs" />
     <Compile Include="Source\Util\RateCounter.cs" />
+    <Compile Include="Source\Util\WorldTime.cs" />
     <Compile Include="Source\World\Chunk.cs" />
     <Compile Include="Source\World\WorldSystem.cs" />
   </ItemGroup>
@@ -150,9 +155,11 @@
     <None Include="RawContent\Tile Textures.psd" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Plan.txt" />
     <Content Include="RawContent\Font.png" />
     <Content Include="RawContent\grass-3189393_1920.png" />
     <Content Include="RawContent\leaf-1657149_1920.jpg" />
+    <Content Include="RawContent\LightEffect.fx" />
     <Content Include="RawContent\pebble-2692972_1920.jpg" />
     <Content Include="RawContent\sand-1053242_1920.jpg" />
   </ItemGroup>

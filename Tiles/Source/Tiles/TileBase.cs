@@ -1,10 +1,11 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
+using RPGGame.Source.Util;
 
 namespace RPGGame.Tiles
 {
-    public abstract class TileBase
+    public abstract class TileBase: GameObject
     {
         public readonly int Id;
         private readonly float Scale;
@@ -20,16 +21,27 @@ namespace RPGGame.Tiles
         }
 
 
-        public virtual void Draw(GameTime gameTime, Vector2 position, Camera2D camera)
+        public override void Draw(GameTime gameTime, Vector2 position, Camera2D camera)
         {
-            var origin = new Vector2((float) Texture.Width / 2, (float) Texture.Height / 2);
-            SpriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
-            SpriteBatch.Draw(Texture, position, null, Color.White, 0.0f, origin, Scale,
-                SpriteEffects.None, 0f);
-            SpriteBatch.End();
-        }
+			Constants.GraphicsDevice.SetRenderTarget(Constants.MainRenderTarget);
+			var origin = new Vector2((float) Texture.Width / 2, (float) Texture.Height / 2);
 
-        public virtual void Draw(GameTime gameTime, Vector2 position)
+			SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.GetViewMatrix());
+			//SpriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
+			SpriteBatch.Draw(Texture, position, null, Color.White, 0.0f, origin, Scale,
+                SpriteEffects.None, 0f);
+            SpriteBatch.End();			
+
+
+		}
+
+		public void Cleanup(GameTime gameTime)
+		{
+			Constants.GraphicsDevice.SetRenderTarget(null);
+
+		}
+
+		public override void Draw(GameTime gameTime, Vector2 position)
         {
             var origin = new Vector2((float) Texture.Width / 2, (float) Texture.Height / 2);
             SpriteBatch.Begin();
@@ -38,14 +50,20 @@ namespace RPGGame.Tiles
             SpriteBatch.End();
         }
 
-        public virtual void Draw(GameTime gameTime, Camera2D camera)
+		public override void Draw(GameTime gameTime, Camera2D camera)
         {
             Draw(gameTime, Vector2.Zero, camera);
         }
 
-        public virtual void Draw(GameTime gameTime)
+		public override void Draw(GameTime gameTime)
         {
             Draw(gameTime, Vector2.Zero);
         }
-    }
+
+		//public override void DrawRaw(GameTime gameTime)
+		//{
+		//	SpriteBatch.Draw(Texture, position, null, Color.White, 0.0f, origin, Scale,
+		//		SpriteEffects.None, 0f);
+		//}
+	}
 }

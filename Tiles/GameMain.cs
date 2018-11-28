@@ -18,32 +18,44 @@ namespace RPGGame
         private SpriteBatch SpriteBatch;
         private WorldSystem WorldSystem;
 		private DebugScreen DebugScreen;
+		private bool ShowDebugInfo = false;
 		private int PreviousMouseWheelValue = 0;
 		private float Zoom = 0;
+		Lighting Lighting;
+		WorldTime WorldTime;
 
-        public GameMain()
+		public GameMain()
         {
             Graphics = new GraphicsDeviceManager(this);
             Graphics.PreferredBackBufferWidth = (int) Constants.WindowDim.X;
             Graphics.PreferredBackBufferHeight = (int) Constants.WindowDim.Y;
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-			IsFixedTimeStep = false;
+			IsFixedTimeStep = true;
 			Window.AllowUserResizing = true;
+			
         }
 
         protected override void Initialize()
         {
             LoadContent();
-            Console.Out.WriteLine(typeof(GraphicsDevice));
             var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, Graphics.PreferredBackBufferWidth,
                 Graphics.PreferredBackBufferHeight);
+			GraphicsDevice.PresentationParameters.RenderTargetUsage = RenderTargetUsage.PreserveContents;
             Camera = new Camera2D(viewportAdapter);
 
-			DebugScreen = new DebugScreen(SpriteBatch);
+			WorldTime = new WorldTime();
 
 
+			Constants.LoadObjects(GraphicsDevice, SpriteBatch, Camera);
             WorldSystem = new WorldSystem(SpriteBatch);
+
+			DebugScreen = new DebugScreen(SpriteBatch, WorldSystem, WorldTime);
+
+			Lighting = new Lighting(GameContent.LightMask, GameContent.LightMaskTexture, GraphicsDevice, SpriteBatch);
+
+
+			LogStartupInformation();
 
             base.Initialize();
         }
@@ -59,7 +71,9 @@ namespace RPGGame
 
         protected override void Update(GameTime gameTime)
         {
-            HandleKeyboard();
+			WorldTime.Update(gameTime);
+			
+			HandleKeyboard();
 			HandleMouse();
 			DebugScreen.UpdateUPS(gameTime);
 
@@ -69,17 +83,37 @@ namespace RPGGame
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.White);
-			foreach (Chunk c in GetChunksInFrame())
+			GraphicsDevice.Clear(Color.Black);
+			Lighting.Draw(gameTime);
+
+			foreach (Chunk c in Miscellaneous.GetChunksInFrame(WorldSystem, Camera))
 			{
 				c.Draw(gameTime, Camera);
 			}
 
+			Lighting.Splice(gameTime);
+			Constants.GraphicsDevice.SetRenderTarget(null);
+
+			SpriteBatch.Begin();
+			SpriteBatch.Draw(Constants.MainRenderTarget, Vector2.Zero, Color.White);
+			SpriteBatch.End();
+
+
+
+
+
+
+
+
+
 			DebugScreen.UpdateFPS(gameTime);
-			DebugScreen.Draw(gameTime);
-            
-            base.Draw(gameTime);
-        }
+			if (ShowDebugInfo)
+			{
+				DebugScreen.Draw(gameTime, Camera);
+			}
+
+			base.Draw(gameTime);
+		}
 
         private void HandleKeyboard() 
         {
@@ -87,10 +121,22 @@ namespace RPGGame
                 Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            if (Keyboard.GetState().IsKeyDown(Keys.A)) Camera.Move(-20 * Vector2.UnitX);
-            if (Keyboard.GetState().IsKeyDown(Keys.D)) Camera.Move(20 * Vector2.UnitX);
-            if (Keyboard.GetState().IsKeyDown(Keys.S)) Camera.Move(20 * Vector2.UnitY);
-            if (Keyboard.GetState().IsKeyDown(Keys.W)) Camera.Move(-20 * Vector2.UnitY);
+            if (Keyboard.GetState().IsKeyDown(Keys.A)) Camera.Move(-Constants.PlayerMovementSpeed * Vector2.UnitX);
+            if (Keyboard.GetState().IsKeyDown(Keys.D)) Camera.Move(Constants.PlayerMovementSpeed * Vector2.UnitX);
+            if (Keyboard.GetState().IsKeyDown(Keys.S)) Camera.Move(Constants.PlayerMovementSpeed * Vector2.UnitY);
+            if (Keyboard.GetState().IsKeyDown(Keys.W)) Camera.Move(-Constants.PlayerMovementSpeed * Vector2.UnitY);
+			if (Keyboard.GetState().IsKeyDown(Keys.Tab))
+			{
+				ShowDebugInfo = !ShowDebugInfo;
+				if (ShowDebugInfo)
+				{
+					Logger.Manager.Log(LogType.DEBUG, "Debug Info Mode tuned ON");
+				}
+				else
+				{
+					Logger.Manager.Log(LogType.DEBUG, "Debug Info Mode tuned OFF");
+				}
+			}
         }
 
 		private void HandleMouse()
@@ -103,21 +149,18 @@ namespace RPGGame
 				Zoom = Constants.MaxZoom;
 				zoomInAllowed = false;
 				zoomOutAllowed = true;
-
 			}
 			else if (Zoom <= Constants.MinZoom)
 			{
 				Zoom = Constants.MinZoom;
 				zoomOutAllowed = false;
 				zoomInAllowed = true;
-
 			}
 
 			if (delta > 0 && zoomInAllowed)
 			{
 				Camera.ZoomIn(Constants.ZoomAmount);
 				Zoom += Constants.ZoomAmount;
-
 			}
 
 			if (delta < 0 && zoomOutAllowed)
@@ -125,7 +168,6 @@ namespace RPGGame
 
 				Camera.ZoomOut(Constants.ZoomAmount);
 				Zoom -= Constants.ZoomAmount;
-
 			}
 
 			PreviousMouseWheelValue = Mouse.GetState().ScrollWheelValue;
@@ -134,37 +176,19 @@ namespace RPGGame
 		
 
 
-		private List<Chunk> GetChunksInFrame(Camera2D camera) // Returns Chunks completely or partially in frame TODO Test this Method
+		
+
+		public void LogStartupInformation()
 		{
-			Vector2 topLeftChunkPos = new Vector2(camera.BoundingRectangle.TopLeft.X, camera.BoundingRectangle.TopLeft.Y) / (Constants.ChunkDim.X * Constants.TileDim);
-			Vector2 bottomRightChunkPos = new Vector2(camera.BoundingRectangle.BottomRight.X, camera.BoundingRectangle.BottomRight.Y) / (Constants.ChunkDim.X * Constants.TileDim);
+			Logger.Manager.Log(LogType.INFO, "Initializing Systems");
+			Logger.Manager.Log(LogType.INFO, "Chunk Dimension setting is " + Constants.ChunkDim);
+			Logger.Manager.Log(LogType.INFO, "World initiated with dimensions of " + Constants.WorldDim + " Chunks");
 
-			Chunk topLeftChunk = WorldSystem.GetChunk(topLeftChunkPos);
-			Chunk bottomRightChunk = WorldSystem.GetChunk(bottomRightChunkPos);
-
-			List<Chunk> chunksInFrame = new List<Chunk>();
-			for (int y = (int)topLeftChunk.Position.Y; y <= (int)bottomRightChunk.Position.Y; y++)
-			{
-				for(int x = (int)topLeftChunk.Position.X; x <= (int)bottomRightChunk.Position.X; x++)
-				{
-					chunksInFrame.Add(WorldSystem.GetChunk(x, y));
-				}
-			}
-
-			return chunksInFrame;
-
-
-
-			
-		}
-		private List<Chunk> GetChunksInFrame()
-		{
-			return GetChunksInFrame(Camera);
 		}
 
 		protected override void OnExiting(object sender, EventArgs args)
 		{
-			Logger.Print();
+			Logger.Manager.Log(LogType.INFO, "Exiting");
 			base.OnExiting(sender, args);
 		}
 	}
