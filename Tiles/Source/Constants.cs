@@ -18,16 +18,18 @@ namespace RPGGame
         public static int TileDim = 25; // Tile size, in pixels, Default 25
 
 		public static Vector2 WindowDim = new Vector2(800, 600); // Game Window Size
+		public static float PreferredAspectRatio = WindowDim.X / WindowDim.Y;
 
 		//public static Vector2 WindowDim = ChunkDim * TileDim; // Game Window Size, 1 Chunk Visible
 
 		// Zoom settings
-		public static float MaxZoom = 5f;
-		public static float MinZoom = 0f;
+		public static float MaxZoom = 10f; // Default 5f
+		public static float MinZoom = -0.5f; // Default 0f
 		public static float ZoomAmount = 0.5f;
 
 		// Time Settings
-		public static int TickToWorldTimeRatio = 10000; // Ratio of Ticks to WorldSeconds
+		public static int SpeedUpRate = 1; // For Debuging, speed up time, Default 1
+		public static int TickToWorldTimeRatio = 20000 / SpeedUpRate; // Ratio of Ticks to WorldSeconds Default 10000
 		public static int WorldSecondsToWorldMinute = 60; // How many WorldSeconds are in a WorldMinute;
 		public static int WorldMinutesToWorldHours = 60; // How many WorldMinutes are in a WorldHour;
 		public static int DawnLength = 4; // in WorldTime Hours
@@ -36,7 +38,8 @@ namespace RPGGame
 		public static int NightLength = 8; // in WorldTime Hours
 		public static int DayNightCycleLength = DawnLength + DayLength + DuskLength + NightLength;
 
-
+		public static Color DayOverlayColor = new Color(1.0f, 1.0f, 1.0f, 0.8f);
+		public static bool IgnoreDayNightEffects = true;
 
 		// Player settings
 		public static float PlayerMovementSpeed = 20f;

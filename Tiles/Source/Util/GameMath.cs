@@ -57,5 +57,16 @@ namespace RPGGame.Source.Util
 		{
 			return Round(number, 0);
 		}
+
+
+		public static float Average(params float[] values)
+		{
+			float total = 0;
+			foreach(float val in values)
+			{
+				total += val;
+			}
+			return total / values.Length;
+		}
 	}
 }

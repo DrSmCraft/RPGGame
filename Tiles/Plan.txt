@@ -2,7 +2,7 @@ Plan Outline for this Project
 
 1. Get the World System Figured out 
 2. Get Animations Figured Out
-
+TODO Blend adjacent tiles of different types using specially created textures. Don't save these to save file, but render them in world
 
 
 Planned Features:

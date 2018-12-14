@@ -5,10 +5,13 @@ namespace RPGGame.Source.Util
 {
 	public enum TimeOfDayNightCycle
 	{
-		Dawn, Day, Dusk, Night
+		Dawn = 0,
+		Day = 4,
+		Dusk = 4 + 8,
+		Night = 4 + 8 + 4
 	}
 
-	class WorldTime
+	public class WorldTime
 	{
 		GameTime GameTime;
 		public int TotalTicks;
@@ -50,6 +53,22 @@ namespace RPGGame.Source.Util
 
 		}
 
+
+		public TimeOfDayNightCycle GetTimeOfDayNightCycle()
+		{
+			if(Hours < Constants.DawnLength)
+			{
+				return TimeOfDayNightCycle.Dawn;
+			}
+			if(Hours >= Constants.DawnLength && Hours <= Constants.DawnLength + Constants.DayLength)
+			{
+				return TimeOfDayNightCycle.Day;
+			}
+			if(Hours >= Constants.DawnLength + Constants.DayLength && Hours <= Constants.DawnLength + Constants.DayLength + Constants.DuskLength){
+				return TimeOfDayNightCycle.Dusk;
+			}
+			return TimeOfDayNightCycle.Night;
+		}
 
 
 

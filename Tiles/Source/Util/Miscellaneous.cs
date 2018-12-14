@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
 using RPGGame.World;
 using System.Collections.Generic;
@@ -25,6 +26,45 @@ namespace RPGGame.Source.Util
 				}
 			}
 			return chunksInFrame;
+		}
+
+		public static Texture2D AddOpacityToTexture(Texture2D texture, float alpha)
+		{
+			Color[] originalColorData = new Color[texture.Width * texture.Height];
+			Color[] newColorData = new Color[texture.Width * texture.Height];
+			
+			for(int i = 0; i < originalColorData.Length; i++)
+			{
+				newColorData[i] = new Color(originalColorData[i], alpha);
+			}
+			Texture2D outTexture = new Texture2D(Constants.GraphicsDevice, texture.Width, texture.Height);
+			outTexture.SetData<Color>(newColorData);
+			return outTexture;
+		}
+
+		public static Color GetColorOfDayNightCycle(WorldTime time) // Needs more work to make it seem gradual and seamless
+		{
+			int hourSince;
+			int currentHour = time.Hours;
+			float halfDay = Constants.DayNightCycleLength / 2.0f;
+
+			bool isTimeIncline = currentHour < halfDay; // Is it the begging of the day
+
+			if (isTimeIncline)
+			{
+				hourSince = currentHour;
+				Vector4 dayColorVector = Constants.DayOverlayColor.ToVector4();
+				float multFactor = hourSince / halfDay;
+				return new Color(dayColorVector.X * multFactor, dayColorVector.Y * multFactor, dayColorVector.Z * multFactor, dayColorVector.W);
+			}
+			else
+			{
+				hourSince = currentHour;
+				Vector4 dayColorVector = Constants.DayOverlayColor.ToVector4();
+				float multFactor = (hourSince - halfDay) / halfDay;
+				return new Color(1 - (dayColorVector.X * multFactor), 1- (dayColorVector.Y * multFactor), 1 - (dayColorVector.Z * multFactor), dayColorVector.W);
+			}
+
 		}
 	}
 }

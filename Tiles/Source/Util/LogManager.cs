@@ -43,9 +43,19 @@ namespace RPGGame.Source.Util
 			}
 		}
 
+		public void Log(string msg)
+		{
+			Log(LogType.DEBUG, msg);
+		}
+
 		public void Log(LogType type, Object obj)
 		{
 			Log(type, obj.ToString());
+		}
+
+		public void Log(Object obj)
+		{
+			Log(LogType.DEBUG, obj);
 		}
 
 		public string ToString()

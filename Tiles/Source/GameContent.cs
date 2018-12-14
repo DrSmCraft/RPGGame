@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.BitmapFonts;
+using RPGGame.Source.Util;
 
 namespace RPGGame
 {
@@ -24,7 +25,7 @@ namespace RPGGame
             DefaultFont = manager.Load<BitmapFont>(@"Fonts/DefaultFont");
 
 			LightMask = manager.Load<Effect>(@"Effects/LightEffect");
-			LightMaskTexture = manager.Load<Texture2D>(@"Effects/Textures/LightMask");
+			LightMaskTexture = Miscellaneous.AddOpacityToTexture(manager.Load<Texture2D>(@"Effects/Textures/LightMask"), 0.8f);
 
 		}
     }

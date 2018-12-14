@@ -23,19 +23,19 @@ namespace RPGGame.Tiles
 
         public static void GenerateTileNames()
         {
-            TileNames["Grass"] = 0;
-            TileNames["Gravel"] = 1;
-            TileNames["Sand"] = 2;
-            TileNames["Water"] = 3;
+			TileNames["Water"] = 0;
+			TileNames["Sand"] = 1;
+			TileNames["Gravel"] = 2;
+			TileNames["Grass"] = 3;
             TileNames["TallGrass"] = 4;
         }
 
         public static void GenerateTileDictionary()
         {
-            TileDict[0] = new TileGrass(SpriteBatch);
-            TileDict[1] = new TileGravel(SpriteBatch);
-            TileDict[2] = new TileSand(SpriteBatch);
-            TileDict[3] = new TileWater(SpriteBatch);
+			TileDict[0] = new TileWater(SpriteBatch);
+			TileDict[1] = new TileSand(SpriteBatch);
+			TileDict[2] = new TileGravel(SpriteBatch);
+			TileDict[3] = new TileGrass(SpriteBatch);
             TileDict[4] = new TileTallGrass(SpriteBatch);
         }
     }
