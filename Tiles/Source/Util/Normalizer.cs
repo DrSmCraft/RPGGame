@@ -29,5 +29,9 @@ namespace RPGGame.Source.Util
 			}
 			return value;
 		}
+
+		
+
+		
 	}
 }

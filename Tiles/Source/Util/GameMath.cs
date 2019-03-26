@@ -68,5 +68,12 @@ namespace RPGGame.Source.Util
 			}
 			return total / values.Length;
 		}
+
+		public static object RandomChoice(params object[] options)
+		{
+			Random rand = new Random();
+			int index = rand.Next(0, options.Length);
+			return options[index];
+		}
 	}
 }

@@ -2,6 +2,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended;
+using RPGGame.Source.Biomes;
 using RPGGame.Source.Util;
 using RPGGame.Tiles;
 using SharpNoise.Modules;
@@ -24,34 +25,53 @@ namespace RPGGame.World
 
 		public void GenerateTiles()
 		{
-			Simplex baseNoise = new Simplex();
-			baseNoise.OctaveCount = 1;
-			baseNoise.Persistence = 0;
+			//Voronoi biomeNiose = new Voronoi();
+			//biomeNiose.Seed = Constants.Seed;
+
 			//RidgedMulti baseNoise = new RidgedMulti();
+			//baseNoise.Seed = Constants.Seed;
+			//baseNoise.OctaveCount = 1;
+
+			//Perlin topNoise = new Perlin();
+			//topNoise.Seed = Constants.Seed;
+			//topNoise.OctaveCount = 10;
+			//topNoise.Persistence = 0.3f;
+			//topNoise.Frequency = 2;
+			//topNoise.Lacunarity = 1;
 
 
-			Simplex topNoise = new Simplex();
-			topNoise.OctaveCount = 10;
-			topNoise.Persistence = 0.3f;
-			topNoise.Frequency = 2;
-			topNoise.Lacunarity = 1;
+			//Add noise = new Add();
+			//noise.Source0 = baseNoise;
+			//noise.Source1 = topNoise;
 
-			Add noise = new Add();
-			noise.Source0 = baseNoise;
-			noise.Source1 = topNoise;
+			Perlin tempNoise = new Perlin();
+			tempNoise.Seed = Constants.Seed;
 
-			Normalizer norm = new Normalizer(lower: 0.0f, upper: 1.0f);
+			Perlin humidityNoise = new Perlin();
+			humidityNoise.Seed = Constants.Seed + 1;
 
-			float scale = .001f;
+			Normalizer norm = new Normalizer(0.0f, 1.0f);
+
+			float scale = .01f; // 0.001f
 			for (var y = 0; y < Constants.ChunkDim.Y; y++)
 			{
 				for (var x = 0; x < Constants.ChunkDim.X; x++)
 				{
-					Vector3 simplexLoc = new Vector3((x + (Position.X * Constants.ChunkDim.X)) * scale, (y + (Position.Y * Constants.ChunkDim.Y)) * scale, 0);
-					double tileId = noise.GetValue(simplexLoc.X, simplexLoc.Y, simplexLoc.Z);
-					tileId = norm.Normalize((float)(tileId + 1) / 2);
-					//Logger.Manager.Log(tileId);
-					Tiles[y, x] = (int)(tileId * 3);
+					//Vector3 simplexLoc = new Vector3((x + (Position.X * Constants.ChunkDim.X)) * scale, (y + (Position.Y * Constants.ChunkDim.Y)) * scale, 0);
+					//double tileId = baseNoise.GetValue(simplexLoc.X, simplexLoc.Y, simplexLoc.Z);
+					//double biomeId = biomeNiose.GetValue((x + (Position.X * Constants.ChunkDim.X)) * scale, (y + (Position.Y * Constants.ChunkDim.Y)) * scale, 0);
+					//biomeId = ((biomeId + 1) / 2) * BiomeMap.BiomeDict.Count;
+					//tileId = BiomeMap.BiomeDict[(int)biomeId].GetTileAtValue(norm.Normalize((float)(tileId + 1) / 2)).Id;
+					float xValue = (x + (Position.X * Constants.ChunkDim.X)) * scale;
+					float yValue = (y + (Position.Y * Constants.ChunkDim.Y)) * scale;
+
+					float tempValue = norm.Normalize((float)(tempNoise.GetValue(xValue, yValue, 0) + 1) / 2);
+					float humidityValue = norm.Normalize((float)(humidityNoise.GetValue(xValue, yValue, 0) + 1) / 2);
+					//Logger.Manager.Log(tempValue + "       " + humidityValue);
+					//BiomeBase biome = BiomeMap.BiomeDict[BiomeMap.BiomeNames["Swamp"]];
+					BiomeBase biome = BiomeMap.GetBiome(tempValue, humidityValue);
+
+					Tiles[y, x] = (int)biome.GetTileAtValue(x, y).Id;
 				}
 			}
 		
@@ -92,6 +112,16 @@ namespace RPGGame.World
         {
             return GetTileId(new Vector2(posX, posY));
         }
+
+		public void SetTileId(Vector2 pos, int id)
+		{
+			Tiles[(int)pos.Y, (int)pos.X] = id;
+		}
+
+		public void SetTileId(int posX, int posY, int id)
+		{
+			SetTileId(new Vector2(posX, posY), id);
+		}
 
 		public override void Draw(GameTime gameTime, Camera2D camera)
         {

@@ -4,17 +4,25 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/../RawContent/Tiles/Final/Stone.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Effects/LightEffect.fx</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Effects/Textures/LightMask.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Fonts/DefaultFont.fnt</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Fonts/DefaultFont_0.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Dirt.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Grass.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Gravel.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Ice.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Sand.png</File>
-    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/TallGrass.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Snow.png</File>
+    <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Stone.png</File>
     <File>C:/Users/Notebook/Documents/Projects/RPGGame/Tiles/Content/Textures/Tiles/Water.png</File>
   </SourceFiles>
   <DestFiles>
+    <File>Textures/Tiles/Stone.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

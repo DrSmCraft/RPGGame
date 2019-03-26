@@ -55,7 +55,7 @@ namespace RPGGame.World
                 return GetTileId(new Vector2(pos.X, Constants.WorldDim.Y));
             }
 
-			return GetChunk(new Vector2(pos.Y % Constants.WorldDim.Y, pos.X % Constants.WorldDim.X))
+			return GetChunk(pos / Constants.ChunkDim)
                 .GetTileId((int) (pos.X % Constants.ChunkDim.X), (int) (pos.Y % Constants.ChunkDim.Y));
         }
 
@@ -87,6 +87,7 @@ namespace RPGGame.World
 				return GetChunk(new Vector2(pos.X, Constants.WorldDim.Y - 1));
 			}
 			return Chunks[(int) pos.Y, (int) pos.X];
+			
 		}
 
 		public Chunk GetChunk(int posX, int posY)
@@ -94,7 +95,12 @@ namespace RPGGame.World
 			return GetChunk(new Vector2(posX, posY));
 		}
 
-        public void Draw(GameTime gameTime, Camera2D camera)
+		public void SetTileId(Vector2 pos, int id)
+		{
+			GetChunk(pos / Constants.ChunkDim).SetTileId((int)(pos.X % Constants.ChunkDim.X), (int)(pos.Y % Constants.ChunkDim.Y), id);
+		}
+
+        public override void Draw(GameTime gameTime, Camera2D camera)
         {
             for (var y = 0; y < Constants.WorldDim.Y; y++)
             for (var x = 0; x < Constants.WorldDim.X; x++)

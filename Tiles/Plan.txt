@@ -7,7 +7,7 @@ TODO Blend adjacent tiles of different types using specially created textures. D
 
 Planned Features:
 -Procederal World Generation (with seed)
--Biome generation based on Voroni noise
+-Biome generation based on Humidity/Tempurature
 -Rivers generation (using low octave perlin/simplex noise)
 -Day/Night Cycle
 -Night circular light with everything else black
@@ -39,11 +39,9 @@ Chunk[] chunks;
 
 struct Chunk{
 int[] tiles; // int is tile type id
-Structure[] structures;
+int[] structures;
 }
 
-struct Structure{
-int type;
-int posX;
-int posY;
-}
+int tile ----> 8 bits = x, 8 bits = y, 8 bits = id, 8 bits = data
+
+int structure ----> 8 bits = x, 8 bits = y, 8 bits = id, 8 bits = data

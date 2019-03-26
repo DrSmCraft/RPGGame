@@ -7,8 +7,9 @@ namespace RPGGame
 {
     public class GameContent
     {
-        public static Texture2D GrassTexture, GravelTexture, SandTexture, WaterTexture, TallGrassTexture;
-        public static BitmapFont DefaultFont;
+		public static Texture2D GrassTexture, GravelTexture, SandTexture, WaterTexture, SnowTexture, DirtTexture, IceTexture, StoneTexture;
+
+		public static BitmapFont DefaultFont;
 
 		public static Effect LightMask;
 		public static Texture2D LightMaskTexture;
@@ -20,7 +21,11 @@ namespace RPGGame
             GravelTexture = manager.Load<Texture2D>(@"Textures/Tiles/Gravel");
             SandTexture = manager.Load<Texture2D>(@"Textures/Tiles/Sand");
             WaterTexture = manager.Load<Texture2D>(@"Textures/Tiles/Water");
-            TallGrassTexture = manager.Load<Texture2D>(@"Textures/Tiles/TallGrass");
+            SnowTexture = manager.Load<Texture2D>(@"Textures/Tiles/Snow");
+			DirtTexture = manager.Load<Texture2D>(@"Textures/Tiles/Dirt");
+			IceTexture = manager.Load<Texture2D>(@"Textures/Tiles/Ice");
+			StoneTexture = manager.Load<Texture2D>(@"Textures/Tiles/Stone");
+
 
             DefaultFont = manager.Load<BitmapFont>(@"Fonts/DefaultFont");
 

@@ -17,6 +17,9 @@ namespace RPGGame
         public static Vector2 ChunkDim = new Vector2(10, 10); // Chunk size, in tiles
         public static int TileDim = 25; // Tile size, in pixels, Default 25
 
+		// World Seed
+		public static int Seed = 0;
+
 		public static Vector2 WindowDim = new Vector2(800, 600); // Game Window Size
 		public static float PreferredAspectRatio = WindowDim.X / WindowDim.Y;
 
@@ -24,7 +27,7 @@ namespace RPGGame
 
 		// Zoom settings
 		public static float MaxZoom = 10f; // Default 5f
-		public static float MinZoom = -0.5f; // Default 0f
+		public static float MinZoom = 0f; // Default 0f
 		public static float ZoomAmount = 0.5f;
 
 		// Time Settings
@@ -39,7 +42,7 @@ namespace RPGGame
 		public static int DayNightCycleLength = DawnLength + DayLength + DuskLength + NightLength;
 
 		public static Color DayOverlayColor = new Color(1.0f, 1.0f, 1.0f, 0.8f);
-		public static bool IgnoreDayNightEffects = true;
+		public static bool IgnoreDayNightEffects = true; // Ignore day/night cycle (for debugging)
 
 		// Player settings
 		public static float PlayerMovementSpeed = 20f;

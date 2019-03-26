@@ -58,7 +58,7 @@ namespace RPGGame.Source.Util
 			Log(LogType.DEBUG, obj);
 		}
 
-		public string ToString()
+		public override string ToString()
 		{
 			var stringBuilder = new StringBuilder();
 			stringBuilder.AppendLine("-------------LOG-------------");

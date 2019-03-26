@@ -15,6 +15,18 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin ../RawContent/Tiles/Final/Stone.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../RawContent/Tiles/Final/Stone.png;Textures/Tiles/Stone.png
+
 #begin Effects/LightEffect.fx
 /importer:EffectImporter
 /processor:EffectProcessor
@@ -50,6 +62,18 @@
 /processorParam:TextureFormat=Color
 /build:Fonts/DefaultFont_0.png
 
+#begin Textures/Tiles/Dirt.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Tiles/Dirt.png
+
 #begin Textures/Tiles/Grass.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -74,6 +98,18 @@
 /processorParam:TextureFormat=Color
 /build:Textures/Tiles/Gravel.png
 
+#begin Textures/Tiles/Ice.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Tiles/Ice.png
+
 #begin Textures/Tiles/Sand.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -86,7 +122,7 @@
 /processorParam:TextureFormat=Color
 /build:Textures/Tiles/Sand.png
 
-#begin Textures/Tiles/TallGrass.png
+#begin Textures/Tiles/Snow.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -96,7 +132,19 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Textures/Tiles/TallGrass.png
+/build:Textures/Tiles/Snow.png
+
+#begin Textures/Tiles/Stone.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/Tiles/Stone.png
 
 #begin Textures/Tiles/Water.png
 /importer:TextureImporter

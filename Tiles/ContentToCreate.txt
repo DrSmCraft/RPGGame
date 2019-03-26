@@ -1,0 +1,26 @@
+﻿Tiles:
+	Grass +
+	Stone +
+	Gravel +
+	Dirt +
+	Water (Animated with 3d water bed)
+	Ice +
+	Snow +
+	Dirt Path
+	CobblesStone Path
+	Sand +
+
+
+Structures:
+	Tall Grass
+	Flowers
+	Bushes
+	Tall Trees
+	Short Trees
+	Gravestone
+	Ruin (Broken building)
+	Field (Farm)
+	City
+	Town
+	Village
+	Sand Dunes

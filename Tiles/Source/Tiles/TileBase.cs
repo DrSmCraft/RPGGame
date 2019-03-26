@@ -26,7 +26,7 @@ namespace RPGGame.Tiles
 			Constants.GraphicsDevice.SetRenderTarget(Constants.MainRenderTarget);
 			var origin = new Vector2((float) Texture.Width / 2, (float) Texture.Height / 2);
 
-			SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, camera.GetViewMatrix());
+			SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, null, null, null, camera.GetViewMatrix());
 			//SpriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
 			SpriteBatch.Draw(Texture, position, null, Color.White, 0.0f, origin, Scale,
                 SpriteEffects.None, 0f);
@@ -44,7 +44,7 @@ namespace RPGGame.Tiles
 		public override void Draw(GameTime gameTime, Vector2 position)
         {
             var origin = new Vector2((float) Texture.Width / 2, (float) Texture.Height / 2);
-            SpriteBatch.Begin();
+            SpriteBatch.Begin(samplerState: SamplerState.PointClamp);
             SpriteBatch.Draw(Texture, position, null, Color.White, 0.0f, origin, Scale,
                 SpriteEffects.None, 0f);
             SpriteBatch.End();

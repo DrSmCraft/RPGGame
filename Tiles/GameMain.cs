@@ -43,10 +43,16 @@ namespace RPGGame
 			SpriteBatch = new SpriteBatch(GraphicsDevice);
 			var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, Graphics.PreferredBackBufferWidth,
 			   Graphics.PreferredBackBufferHeight);
+			RasterizerState rasterizer = new RasterizerState();
+			rasterizer.MultiSampleAntiAlias = false;
+			GraphicsDevice.RasterizerState = rasterizer;
 			GraphicsDevice.PresentationParameters.RenderTargetUsage = RenderTargetUsage.PreserveContents;
+
 			Camera = new Camera2D(viewportAdapter);
 
+
 			Constants.LoadObjects(GraphicsDevice, SpriteBatch, Camera);
+
 
 
 
@@ -74,12 +80,14 @@ namespace RPGGame
 		{
 			TileMap.SetSpriteBatch(SpriteBatch);
 			TileMap.GenerateTileTypes();
+			BiomeMap.GenerateBiomeTypes();
 
 			GameContent.LoadContent(Content); // Load all textures
 		}
 
 		protected override void Update(GameTime gameTime)
 		{
+			
 			CheckAspectRatio();
 			if (!PauseWorldTime)
 			{
@@ -174,7 +182,8 @@ namespace RPGGame
 
 		private void HandleMouse()
 		{
-			int delta = Mouse.GetState().ScrollWheelValue - PreviousMouseWheelValue;
+			MouseState state = Mouse.GetState();
+			int delta = state.ScrollWheelValue - PreviousMouseWheelValue;
 			bool zoomInAllowed = true;
 			bool zoomOutAllowed = true;
 			if (Zoom >= Constants.MaxZoom)
@@ -202,8 +211,16 @@ namespace RPGGame
 				Camera.ZoomOut(Constants.ZoomAmount);
 				Zoom -= Constants.ZoomAmount;
 			}
+			
 
 			PreviousMouseWheelValue = Mouse.GetState().ScrollWheelValue;
+
+			if(state.LeftButton == ButtonState.Pressed)
+			{
+				Vector2 coords = Camera.Position + state.Position.ToVector2();
+				Vector2 tileCoord = coords / Constants.TileDim;
+				WorldSystem.SetTileId(tileCoord, 4);
+			}
 		}
 
 
